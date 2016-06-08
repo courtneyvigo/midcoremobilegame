@@ -1,0 +1,1070 @@
+.main-container {
+	overflow: hidden;
+	position: relative;
+	height: 1024px;
+	width: 768px;
+}
+
+@font-face {
+	font-family: "Georgia";
+	src: url(../Assets/Georgia.ttf);
+}
+
+.mng-bg_container {
+	position: absolute;
+	overflow: hidden;
+	width: 768px;
+	height: 1024px;
+}
+
+#map-bg {
+	background-image: url("../Assets/BG_iPad.png");
+	width: 2777px;
+	height: 1771px;
+    top: -104px;
+    left: -1004px;
+	position: absolute;
+}
+
+@keyframes map1 {
+    from {-webkit-transform: translate(0px,0px);}
+    to {-webkit-transform: translate(-565px,-366px);}
+}
+
+.mng-map-anim1 {
+	-webkit-animation: map1 .7s linear;
+	animation-fill-mode: forwards;
+}
+
+@keyframes map2 {
+    from {-webkit-transform: translate(-565px,-366px);}
+    to {-webkit-transform: translate(-750px,-440px);}
+}
+
+.mng-map-anim2 {
+	-webkit-animation: map2 .4s linear;
+	animation-fill-mode: forwards;
+}
+
+@keyframes map3 {
+    from {-webkit-transform: translate(-750px,-440px);}
+    to {-webkit-transform: translate(-565px,-366px);}
+}
+
+.mng-map-anim3 {
+	-webkit-animation: map3 .4s linear;
+	animation-fill-mode: forwards;
+}
+
+@keyframes map4 {
+    from {-webkit-transform: translate(-750px,-440px);}
+    to {-webkit-transform: translate(1004px,104px);}
+}
+
+.mng-map-anim4 {
+	-webkit-animation: map4 .4s linear;
+	animation-fill-mode: forwards;
+}
+
+@keyframes map5 {
+    from {-webkit-transform: translate(1004px,104px);}
+    to {-webkit-transform: translate(890px,-41px);}
+}
+
+.mng-map-anim5 {
+	-webkit-animation: map5 .4s linear;
+	animation-fill-mode: forwards;
+}
+
+@keyframes map6 {
+    from {-webkit-transform: translate(890px,-41px);}
+    to {-webkit-transform: translate(1004px,104px);}
+}
+
+.mng-map-anim6 {
+	-webkit-animation: map6 .4s linear;
+	animation-fill-mode: forwards;
+}
+
+@keyframes map7 {
+    from {-webkit-transform: translate(1004px,104px);}
+    to {-webkit-transform: translate(-800px,-530px);}
+}
+
+.mng-map-anim7 {
+	-webkit-animation: map7 .4s linear;
+	animation-fill-mode: forwards;
+}
+
+@keyframes map8 {
+    from {-webkit-transform: translate(-800px,-530px);}
+    to {-webkit-transform: translate(-985px,-604px);}
+}
+
+.mng-map-anim8 {
+	-webkit-animation: map8 .4s linear;
+	animation-fill-mode: forwards;
+}
+
+@keyframes map9 {
+    from {-webkit-transform: translate(-985px,-604px);}
+    to {-webkit-transform: translate(-800px,-530px);}
+}
+
+.mng-map-anim9 {
+	-webkit-animation: map9 .4s linear;
+	animation-fill-mode: forwards;
+}
+
+@keyframes map10 {
+    from {-webkit-transform: translate(-800px,-530px);}
+    to {-webkit-transform: translate(972px,77px);}
+}
+
+.mng-map-anim10 {
+	-webkit-animation: map10 .4s linear;
+	animation-fill-mode: forwards;
+}
+
+#map-sawmill {
+	position: absolute;
+	background-image: url("../Assets/mapSawMill_iPad.png");
+    width: 205px;
+    height: 148px;
+    top: 853px;
+    left: 1875px;
+}
+
+#map-stables {
+	position: absolute;
+	background-image: url("../Assets/mapStables_iPad.png");
+	width: 205px;
+	height: 168px;
+    top: 447px;
+    left: 190px;
+}
+
+#map-farm {
+	position: absolute;
+	background-image: url("../Assets/mapFarm_iPad.png");
+	width: 160px;
+	height: 129px;
+	top: 1046px;
+	left: 2136px;
+}
+
+#back-button {
+	background-image: url("../Assets/backButton_iPad.png");
+	width: 108px;
+    height: 105px;
+    position: absolute;
+    top: 7px;
+    left: 9px;
+}
+
+.mng-t-hud-bg {
+	background-image: url("../Assets/tHudBG_iPad.jpg");
+	width: 768px;
+	height: 78px;
+	position: absolute;
+}
+
+.mng-level-number {
+	position: absolute;
+	text-align: center;
+	font-family: "Georgia";
+	color: #ffffff;
+	font-size: 24px;
+	top: 37px;
+	left: 326px;
+    width: 104px;
+	height: 22px;
+}
+
+#b-hud {
+	background-image: url("../Assets/BottomUI.jpg");
+	width: 768px;
+	height: 107px;
+	position: absolute;
+	top: 918px;
+}
+
+@keyframes notification {
+    from {-webkit-transform: translate(0px,0px);}
+    to {-webkit-transform: translate(0px,8px);}
+}
+
+.mng-notification {
+	background-image: url("../Assets/notification_iPad.png");
+	width: 32px;
+	height: 31px;
+	position: absolute;
+    top: 34px;
+    left: 584px;
+	-webkit-animation: notification .4s ease-in infinite alternate;
+}
+
+/*the fades for the selection and build menus. We are changing the class to which dim we want styled*/
+#dimmer {
+	width: 768px;
+	height: 1024px;
+	position: absolute;
+	top: 0;
+	left: 0;
+}
+
+/*this is where the sword starts...*/
+@keyframes sword-vert {
+    from {-webkit-transform: translate(0px,0px);}
+    to {-webkit-transform: translate(0px,-45px);}
+}
+
+@keyframes sword-horz {
+    from {-webkit-transform: rotate(90deg) translate(0px,0px);}
+    to {-webkit-transform: rotate(90deg) translate(0px,-45px);}
+}
+
+@keyframes sword-flip {
+    from {-webkit-transform: rotate(180deg) translate(0px,0px);}
+    to {-webkit-transform: rotate(180deg) translate(0px,-45px);}
+}
+
+#sword {
+	position: absolute;
+	width: 77px;
+	height: 155px;
+	background-image: url("../Assets/sword_iPad.png");
+}
+
+.mng-dim1 .mng-sword {
+	top: 243px;
+	left: 346px;
+	-webkit-animation: sword-vert .6s linear infinite alternate;
+}
+
+.mng-dim2 .mng-sword {
+	top: 675px;
+	left: 346px;
+	-webkit-animation: sword-vert .6s linear infinite alternate;
+}
+
+.mng-dim3 .mng-sword {
+	top: 240px;
+	left: 350px;
+	-webkit-animation: sword-vert .6s linear infinite alternate;
+}
+
+.mng-dim4 .mng-sword {
+	top: 720px;
+	left: 494px;
+	-webkit-animation: sword-flip .6s linear infinite alternate;
+}
+
+.mng-dim5 .mng-sword {
+	top: 430px;
+	left: 432px;
+	-webkit-animation: sword-horz .6s linear infinite alternate;
+}
+
+#sword-cover {
+	position: absolute;
+	width: 77px;
+	height: 155px;
+	top: 430px;
+	left: 432px;
+	-webkit-animation: sword-horz .6s linear infinite alternate;
+}
+
+@-webkit-keyframes sprite-anim {
+    100% {background-position: 1245px;} 
+}
+
+#fire-sprite {
+	background: url("../Assets/fireSprite.png") left center;
+	position: absolute;
+    opacity: .75;
+	-webkit-animation: sprite-anim .3s steps(3) infinite;
+}
+
+.mng-fire1 {
+	top: 387px;
+	left: 177px;
+	width: 402px;
+	height: 245px;
+}
+
+.mng-fire2 {
+	top: 756px;
+	left: 177px;
+	width: 402px;
+	height: 245px;
+    -webkit-transform: scale(0.75,.5);
+}
+
+.mng-fire3 {
+	top: 387px;
+	left: 173px;
+	width: 402px;
+	height: 245px;
+	-webkit-transform: scale(1.4,1.2);
+}
+
+.mng-fire4 {
+	top: 395px;
+	left: 176px;
+	width: 402px;
+	height: 245px;
+}
+
+.mng-fire5 {
+	top: 513px;
+	left: 331px;
+	width: 402px;
+	height: 245px;
+    -webkit-transform: scale(.45,.8);
+}
+
+#frame {
+	position: absolute;
+	border-width: 5px;	
+    border-style: solid;
+    border-color: yellow;
+    border-radius: 7px;
+}
+
+.mng-dim1 .mng-boxoutline {
+	top: 420px;
+	left: 208px;
+	width: 342px;
+	height: 176px;
+}
+
+.mng-dim2 .mng-boxoutline {
+	top: 838px;
+	left: 255px;
+	width: 249px;
+	height: 76px;
+}
+
+.mng-dim3 .mng-boxoutline {
+	top: 403px;
+	left: 155px;
+	width: 450px;
+	height: 208px;
+}
+
+.mng-dim4 .mng-boxoutline {
+	top: 565px;
+	left: 463px;
+	width: 136px;
+	height: 136px;
+}
+
+.mng-dim5 .mng-boxoutline {
+	top: 403px;
+	left: 155px;
+	width: 450px;
+	height: 208px;
+}
+
+.mng-build-bttn {
+	position: absolute;
+	width: 248px;
+	height: 73px;
+	left: 261px;
+	top: 845px;
+	background-image: url("../Assets/BuildBttn_iPad.jpg");
+	border-radius: 7px;
+}
+
+/*style default style (will never change) for all boxes 1-4*/
+#box1 {
+	width: 768px;
+	position: absolute;
+	top: 0;
+	left: 0;
+	background-color: black;
+	opacity: .65;
+}
+
+#box2 {
+	position: absolute;
+	left: 0;
+	background-color: black;
+	opacity: .65;
+}
+
+#box3 {
+	position: absolute;
+	background-color: black;
+	opacity: .65;
+}
+
+#box4 {
+	position: absolute;
+	background-color: black;
+	opacity: .65;
+}
+
+/*Styles for all dims for box1*/
+.mng-dim1 .mng-box1 {
+	height: 425px;
+}
+
+.mng-dim2 .mng-box1 {
+	height: 844px;
+}
+
+.mng-dim3 .mng-box1 {
+	height: 408px;
+}
+
+.mng-dim4 .mng-box1 {
+	height: 570px;
+}
+
+.mng-dim5 .mng-box1 {
+	height: 408px;
+}
+
+/*Styles for all dims for box2*/
+.mng-dim1 .mng-box2 {
+	width: 213px;
+	height: 599px;
+	top: 425px;
+}
+
+.mng-dim2 .mng-box2 {
+	width: 262px;
+	height: 180px;
+	top: 844px;
+}
+
+.mng-dim3 .mng-box2 {
+	width: 153px;
+	height: 617px;
+	top: 407px;
+}
+
+.mng-dim4 .mng-box2 {
+	width: 468px;
+	height: 454px;
+	top: 570px;
+}
+
+.mng-dim5 .mng-box2 {
+	width: 153px;
+	height: 617px;
+	top: 407px;
+}
+
+/*Styles for all dims for box3*/
+.mng-dim1 .mng-box3 {
+	width: 342px;
+	height: 423px;
+	top: 601px;
+	left: 213px;
+}
+
+.mng-dim2 .mng-box3 {
+	width: 244px;
+	height: 107px;
+	top: 920px;
+	left: 262px;
+}
+
+.mng-dim3 .mng-box3 {
+	width: 466px;
+	height: 408px;
+	top: 616px;
+	left: 152px;
+}
+
+.mng-dim4 .mng-box3 {
+	width: 300px;
+	height: 318px;
+	top: 706px;
+	left: 468px;
+}
+
+.mng-dim5 .mng-box3 {
+	width: 466px;
+	height: 408px;
+	top: 616px;
+	left: 152px;
+} 
+
+/*Styles for all dims for box4*/
+.mng-dim1 .mng-box4 {
+	width: 213px;
+	height: 599px;
+	top: 425px;
+	left: 555px;
+}
+
+.mng-dim2 .mng-box4 {
+	width: 262px;
+	height: 180px;
+	top: 844px;
+	left: 506px;
+}
+
+.mng-dim3 .mng-box4 {
+	width: 150px;
+	height: 617px;
+	top: 407px;
+	left: 618px;
+}
+
+.mng-dim4 .mng-box4 {
+	width: 164px;
+	height: 136px;
+	top: 570px;
+	left: 604px;
+}
+
+.mng-dim5 .mng-box4 {
+	width: 150px;
+	height: 617px;
+	top: 407px;
+	left: 618px;
+}
+
+/*this is where the build menu starts*/
+#build-hud {
+	position: absolute;
+	top: 0;
+	left: 0;
+	overflow: hidden;
+	width: 768px;
+	height: 1024px;
+}
+
+.mng-last-rotate {
+	-webkit-transform: translate(-115px,-8px) rotate(90deg);
+}
+
+#circle {
+	position: absolute;
+	top: 0px;
+	left: 200px;
+    width: 300px;
+    height: 600px;
+    border-top-right-radius: 600px;
+    border-bottom-right-radius: 600px;
+    border: 109px solid black;
+    border-left: 0;
+    -webkit-mask-image: -webkit-linear-gradient(top, rgba(0,0,0,0) 0%,rgba(0,0,0,0) 20%,rgba(0,0,0,1) 55%,rgba(0,0,0,1) 65%,rgba(0,0,0,0) 80%,rgba(0,0,0,0) 100%);
+    -webkit-animation: menufade 1s;
+}
+
+.mng-hidden-object {
+	display: none;
+}
+
+@keyframes menufade {
+    from {opacity: 0;}
+    to {opacity: 1;}
+}
+
+.mng-dimfade {
+	-webkit-animation: menufade .5s;
+	animation-fill-mode: forwards;
+}
+
+#menu-fade {
+	position: absolute;
+	top: 0px;
+	left: 0px;
+	width: 768px;
+	height: 1024px;
+	background: -webkit-linear-gradient(top, rgba(0,0,0,1) 0%,rgba(0,0,0,0) 29%,rgba(0,0,0,0) 49%,rgba(0,0,0,1) 100%);
+	-webkit-animation: menufade 1s;
+}
+
+/*this is where the information box is... it comes up when the build menu is visible*/
+#description {
+	position: absolute;
+	top: 633px;
+	left: 95px;
+	width: 574px;
+	height: 205px;
+}
+
+.mng-des-bg {
+	position: absolute;
+	border: 2px solid #242424;
+	background-color: rgba(0, 0, 0, 0.5);
+	width: 560px;
+	height: 125px;
+	left: 5px;
+}
+
+#des-text-top {
+	position: absolute;
+	text-align: left;
+	font-family: "Georgia";
+	color: #BBBAA2;
+	font-size: 17px;
+	width: 528px;
+	height: 85px;
+	margin: 20px;
+}
+
+#des-text-avai {
+	position: absolute;
+	text-align: left;
+	font-family: "Georgia";
+	color: #FFE659;
+	font-size: 17px;
+	width: 528px;
+	height: 85px;
+	margin: 20px;
+	line-height: 66px;
+}
+
+#des-bar {
+	background-image: url("../Assets/infoBarDec_iPad.jpg");
+	position: absolute;
+	width: 573px;
+	height: 7px;
+}
+
+.mng-top {
+	top: 0;
+}
+
+.mng-bottom {
+	top: 124px;
+}
+
+.mng-arrow {
+	background-image: url("../Assets/Arrow_iPad.png");
+	position: absolute;
+	width: 54px;
+	height: 86px;
+	top: 350px;
+	left: 406px;
+}
+
+#scroll-left {
+	background-image: url("../Assets/ScrollBar_iPad.png");
+	position: absolute;
+	width: 20px;
+	height: 39px;
+	top: 346px;
+	left: 293px;
+}
+
+#scroll-right {
+	background-image: url("../Assets/ScrollBar_iPad.png");
+	position: absolute;
+	width: 20px;
+	height: 39px;
+	top: 346px;
+	left: 482px;
+}
+
+#scroll-bg {
+	background-image: url("../Assets/scrollBG_iPad.jpg");
+	position: absolute;
+	width: 191px;
+	height: 31px;
+	top: 350px;
+	left: 300px;
+}
+
+#outer-circle {
+	position: absolute;
+	top: -389px;
+	left: -600px;
+    width: 600px;
+    height: 600px;
+    border-radius: 1200px;
+    border: 500px solid rgba(0,0,0,0.4);
+    -webkit-animation: menufade 1.3s;
+}
+
+.mng-sheild {
+	position: absolute;
+	background-image: url("../Assets/Sheild_iPad.jpg");
+	width: 130px;
+	height: 130px;
+	border-radius: 500px;
+}
+
+#icon-1 {
+	top: 178px;
+	left: 448px;
+	-webkit-animation: button-1-slide 1s;
+}
+
+#icon-2 {
+	top: 316px;
+	left: 485px;
+	-webkit-box-shadow: 0px 0px 9px 3px rgba(255,221,0,1);
+	-webkit-animation: button-2-grow 1s;
+}
+
+#icon-3 {
+	top: 465px;
+	left: 471px;
+	-webkit-animation: button-3-slide 1s;
+}
+
+.mng-sheild-image {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 70px;
+	height: 70px;
+}
+
+/*icon animation*/
+@keyframes button-1-slide {
+	0%{-webkit-transform: translate(37px,139px); opacity: 0;}
+	30%{-webkit-transform: translate(37px,139px); opacity: 0;}
+	31%{-webkit-transform: translate(37px,139px); opacity: 1;}
+	60%{-webkit-transform: translate(0px,0px); opacity: 1;}
+}
+
+@keyframes button-2-grow {
+	0%{-webkit-transform: scale(.3);}
+	30%{-webkit-transform: scale(1);}
+}
+
+@keyframes button-3-slide {
+	0%{-webkit-transform: translate(14px,-148px); opacity: 0;}
+	40%{-webkit-transform: translate(14px,-148px); opacity: 0;}
+	41%{-webkit-transform: translate(14px,-148px); opacity: 1;}
+	70%{-webkit-transform: translate(0px,0px); opacity: 1;}
+}
+
+/*these set images for icons1*/
+.mng-icons1 #sheild-image1 {
+	background-image: url("../Assets/MilitaryTent_iPad.png");
+    width: 238px;
+    height: 106px;
+}
+
+.mng-icons1 #sheild-image2 {
+	background-image: url("../Assets/Sawmill_iPad.png");
+    width: 198px;
+    height: 107px;
+}
+
+.mng-icons1 #sheild-image3 {
+	background-image: url("../Assets/Farm_iPad.png");
+    width: 173px;
+    height: 98px;
+}
+
+/*these set images for icons2*/
+.mng-icons2 #sheild-image1 {
+	background-image: url("../Assets/DrillGrounds_iPad.png");
+	width: 259px;
+	height: 109px;
+}
+
+.mng-icons2 #sheild-image2 {
+	background-image: url("../Assets/Stables_iPad.png");
+	width: 191px;
+	height: 118px;
+}
+
+.mng-icons2 #sheild-image3 {
+	background-image: url("../Assets/Barracks_iPad.png");
+    width: 206px;
+    height: 131px;
+}
+
+/*these set images for icons3*/
+.mng-icons3 #sheild-image1 {
+	background-image: url("../Assets/Sawmill_iPad.png");
+    width: 199px;
+    height: 107px;
+}
+
+.mng-icons3 #sheild-image2 {
+	background-image: url("../Assets/Farm_iPad.png");
+    width: 172px;
+    height: 98px;
+}
+
+.mng-icons3 #sheild-image3 {
+	background-color: rgba(0,0,0,0);
+}
+
+/*these set images for icons4*/
+.mng-icons4 #sheild-image1 {
+	background-image: url("../Assets/Train_iPad.jpg");
+	border-radius: 500px;
+	width: 135px;
+	height: 135px;
+}
+
+.mng-icons4 #sheild-image2 {
+	background-image: url("../Assets/Upgrade_iPad.png");
+	width: 135px;
+	height: 137px;
+}
+
+.mng-icons4 #sheild-image3 {
+	background-image: url("../Assets/Details_iPad.png");
+	width: 135px;
+	height: 137px;
+}
+/*this is where the build menu ends*/
+
+/*this is where the tutorial menu starts*/
+#tutorial {
+	position: absolute;
+	width: 768px;
+	height: 1024px;
+	background-color: rgba(0,0,0,0.5);
+	overflow: hidden;
+}
+
+@keyframes char-slide{
+	from {-webkit-transform: translate(-400px,0);}
+    to {-webkit-transform: translate(0,0);}
+}
+
+@keyframes tut-box-slide{
+	from {-webkit-transform: translate(400px,0);}
+    to {-webkit-transform: translate(0,0);}
+}
+
+#tut-char {
+	position: absolute;
+	background-image: url("../Assets/Tut_Character.png");
+	left: 17px;
+	top: 223px;
+	width: 380px;
+	height: 499px;
+	-webkit-animation: char-slide .4s;
+}
+
+#tut-box {
+	position: absolute;
+	background-image: url("../Assets/Tut_SpeechBubble.png");
+	left: 255px;
+	top: 493px;
+	width: 486px;
+	height: 208px;
+	-webkit-animation: tut-box-slide .4s;
+}
+
+#tut-text {
+	position: absolute;
+	text-align: left;
+	font-family: "Georgia";
+	color: #5A2A0D;
+	font-size: 22px;
+	top: 60px;
+	left: 111px;
+	width: 312px;
+	height: 100px;
+	font-weight: bold;
+	line-height: 140%;
+}
+
+@keyframes continue {
+	from {opacity: 0;}
+    to {opacity: 1;}
+}
+
+#tap-cont {
+	position: absolute;
+	text-align: left;
+	font-family: "Georgia";
+	color: #FCF7F4;
+	font-size: 35px;
+	top: 780px;
+	left: 182px;
+	width: 420px;
+	height: 70px;
+	line-height: 140%;
+	-webkit-animation: continue .8s infinite alternate;
+}
+
+@keyframes success-prompt{
+	from {-webkit-transform: scale(1,0);}
+    to {-webkit-transform: scale(1,1);}
+}
+
+#success-conf {
+	position: absolute;
+	width: 700px;
+	height: 117px;
+	top: 475px;
+	left: 34px;
+	-webkit-animation: success-prompt .3s;
+}
+
+#success-txt {
+	position: absolute;
+	text-align: center;
+	font-family: "Georgia";
+	color: #B4B3B2;
+	font-size: 20px;
+	top: 5px;
+	left: 111px;
+	width: 471px;
+	height: 107px;
+	line-height: 500%;
+}
+
+.mng-top-bar {
+	width: 700px;
+	height: 5px;
+	position: absolute;
+	background:-webkit-linear-gradient(left, rgba(114,67,33,0.3) 0%,rgba(114,67,33,1) 14%,rgba(114,67,33,1) 15%,rgba(114,67,33,1) 30%,rgba(229,199,110,1) 50%,rgba(114,67,33,1) 70%,rgba(114,67,33,1) 85%,rgba(114,67,33,0.3) 100%);
+	left: 0;
+}
+
+.mng-conf-bg {
+	position: absolute;
+	background: -webkit-linear-gradient(left, rgba(0,0,0,0.15) 0%,rgba(0,0,0,0.5) 1%,rgba(0,0,0,1) 40%,rgba(0,0,0,1) 60%,rgba(0,0,0,0.15) 100%);
+	width: 700px;
+	height: 116px;
+	top: 0;
+	left: 0;
+}
+
+.mng-bttm-bar {
+	width: 700px;
+	height: 5px;
+	position: absolute;
+	background: -webkit-linear-gradient(left, rgba(114,67,33,0.3) 0%,rgba(114,67,33,1) 14%,rgba(114,67,33,1) 15%,rgba(114,67,33,1) 30%,rgba(229,199,110,1) 50%,rgba(114,67,33,1) 70%,rgba(114,67,33,1) 85%,rgba(114,67,33,0.3) 100%);
+	top: 112px;
+	left: 0;
+}
+
+/*outro*/
+@-webkit-keyframes thanks-grow {
+	0% {-webkit-transform: scale(0,0);}
+	100% {-webkit-transform: scale(1,1);}
+}
+
+.mng-ending-thanks {
+	position: absolute;
+	text-align: center;
+	font-family: "Georgia";
+	color: white;
+	font-size: 71px;
+	font-weight: bold;
+	top: 412px;
+	left: 52px;
+	width: 672px;
+	height: 86px;
+	-webkit-text-shadow: 0 0 10px #000000;
+	-webkit-animation: thanks-grow .5s linear;
+}
+
+@-webkit-keyframes fade-in {
+	0% {opacity: 0;}
+	100% {opacity: .65;}
+}
+
+.mng-outro-fade {
+	background: black;
+	width: 768px;
+	height: 1024px;
+	position: absolute;
+	opacity: .50;
+	-webkit-animation: fade-in .4s linear;
+}
+
+/*CSS for Outro*/
+@-webkit-keyframes drop {
+	0% {-webkit-transform: translate(0px,0px);}
+	50% {-webkit-transform: translate(0px,1033px);}
+	100% {-webkit-transform: translate(0px,1033px);}
+}
+
+.mng-drop-anim {
+	-webkit-animation: drop 1s linear 0.7s;
+}
+
+.mng-drop-done {
+	-webkit-transform: translate(0px,1033px);
+}
+
+#outro-container {
+	overflow: hidden;
+	width: 768px;
+	height: 1024px;
+	top: -1024px;
+	position: absolute;
+}
+
+.mng-container {
+	background-image: url('../Assets/BG_OutroiPad.jpg');
+	width: 768px;
+	height: 1024px;
+	position: absolute;
+}
+
+/*function that defines the animation to be called later. It also defines the parameters and animation deforms. 
+http://www.w3schools.com/css/css3_animations.asp*/
+@-webkit-keyframes pulse {
+	from {-webkit-transform: scale(.8);}
+	to {-webkit-transform: scale(1);}
+}
+
+/*The top position of the bottom botton is the same across each screen*/
+#bottom-button {
+	position: absolute;
+	top: 526px;
+}
+
+/*The position of the top botton is the same across each screen. The styling may be different*/
+#top-button {
+	width: 440px;
+	height: 123px;
+	position: absolute;
+	left: 164px;
+	top: 346px;
+	/*animation is called. This is in a very specific order. 1. animation name 2. duration 3. animation easing 4. delay 5. pattern*/
+	animation: pulse 1.5s ease-in-out infinite alternate;
+}
+
+.mng-install-click-url {
+	position: absolute;
+	width: 768px;
+	height: 934px;
+	top: 100px;
+}
+
+.mng-idle-click-url {
+	position: absolute;
+	width: 440px;
+	height: 146px;
+	left: 163px;
+	top: 333px;
+}
+
+.mng-install-idle-dl {
+	background-image: url('../Assets/DownloadCTA_OutroiPad.jpg');
+	background-size: 441px 123px;
+	-webkit-box-shadow: 0px 0px 33px -5px rgba(255,249,204,1);
+}
+
+.mng-install-thanks {
+	width: 234px;
+	height: 161px;
+	background-image: url('../Assets/Thanks_OutroiPad.png');
+	background-size: 234px 161px;
+	left: 266px;
+}
+
+.mng-idle-retry {
+	width: 284px;
+	height: 175px;
+	border-radius:6px;
+	background-image: url('../Assets/Idle_OutroiPad.jpg');
+	background-size: 284px 175px;
+	left: 242px;
+	-webkit-box-shadow: 0px 0px 33px -5px rgba(255,249,204,1);
+}

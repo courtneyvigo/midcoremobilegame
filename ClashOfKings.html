@@ -1,0 +1,102 @@
+<head>
+	<script src="js/ClashOfKings.js"></script>
+	<script src="js/Clash_Outro.js"></script>
+	<link rel="stylesheet" href="css/ClashOfKings.css">
+</head>
+
+<div class="mng-main-container">
+	<div id="game-container" class="mng-game-container" style="width:768px; height:1024px; position:absolute">
+		<div class="mng-bg_container">
+			<div id="map-bg">
+				<div id="map-sawmill" class="mng-hidden-object"></div>
+				<div id="map-stables" class="mng-hidden-object"></div>
+				<div id="map-farm" class="mng-hidden-object"></div>
+			</div>
+		</div>
+		<div id="t-hud">
+			<div id="t-hud-1">
+				<div class="mng-t-hud-bg"></div>
+				<div class="mng-level-number">Level 118</div>
+			</div>	
+			<div id="t-hud-2" class="mng-hidden-object">
+				<div class="mng-t-hud-bg"></div>
+			</div>
+		</div>
+		<div id="b-hud">
+			<div class="mng-notification"></div>
+			<div class="mng-b-hud-2"></div>
+		</div>
+		<div id="stables-scroll" class="mng-hidden-object">
+			<div id="scroll-bg"></div>
+			<div id="scroll-right"></div>
+			<div id="scroll-left"></div>
+		</div>
+		<div id="selection-menu" class="mng-hidden-object">
+			<div id="build-hud">
+				<div id="outer-circle"></div>
+				<div id="circle"></div>
+				<icons id="icons" class="mng-icons1">
+					<div id="icon-1" class="mng-sheild">
+						<div id="sheild-image1" class="mng-sheild-image"></div>
+					</div>
+					<div id="icon-3" class="mng-sheild">
+						<div id="sheild-image3" class="mng-sheild-image"></div>
+					</div>
+					<div id="icon-2" class="mng-sheild">
+						<div id="sheild-image2" class="mng-sheild-image"back></div>
+					</div>
+				</icons>
+				<div id="arrow" class="mng-arrow"></div>
+				<div id="menu-fade"></div>
+				<div id="description" class="mng-hidden-object">
+					<div class="mng-des-bg"></div>
+					<div id="des-text-top">The Sawmill is where Wood is produced and stored.</div>
+					<div id="des-text-avai">Available: 0/4</div>
+					<div id="des-bar">
+						<div class="mng-top"></div>
+						<div class="mng-bottom"></div>
+					</div>
+				</div>
+			</div>
+			<div id="back-button" class="mng-hidden-object"></div>
+			<div id="dimmer" class="mng-hidden-object">
+			<div class="mng-box1" id="box1"></div>
+			<div class="mng-box2" id="box2"></div>
+			<div class="mng-box3" id="box3"></div>
+			<div class="mng-box4" id="box4"></div>
+			<div class="mng-boxoutline" id="frame"></div>
+			<div class="mng-build-bttn" id="build-bttn" onclick="goToNextStep();"></div>
+			<div id="fire-sprite" class="mng-fire1" onclick="goToNextStep();"></div>
+			<div class="mng-sword" id="sword"></div>
+			<div id="sword-cover" class="mng-hidden-object" onclick="goToNextStep();"></div>
+			</div>
+		</div>
+		<div id="success-conf" class="mng-hidden-object">
+			<div class="mng-conf-bg"></div>
+			<div class="mng-top-bar"></div>
+			<div id="success-txt">Sawmill Lv1 have been built</div>
+			<div class="mng-bttm-bar"></div>
+		</div>
+		<div id="tutorial" onclick="goToNextStep();">
+			<div id="tut-char"></div>
+			<div id="tap-cont">Tap anywhere to continue!</div>
+			<div id="tut-box">
+				<div id="tut-text">Wood is crucial for the empire's growth! We need a Sawmill first.</div>
+			</div>
+		</div>
+	</div>
+	<div id="outro-fade"></div>
+	<div id="ending-thanks">Thanks For Playing!</div>
+	<div id="outro-container" style="width:768px; height:1024px; position:absolute">
+		<div class="mng-container">
+			<div id="bottom-button" class="mng-install-thanks" onclick="clickRetry();">
+			</div>
+			<div id="top-button" class="mng-install-idle-dl" onclick="clickDownload();">
+			</div>
+			<div id="mnectarbranding">
+			</div>
+			<div id="dl-div" onclick=" ">
+			</div>
+		</div>
+	</div>
+</div>
